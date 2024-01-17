@@ -19,7 +19,11 @@ const Weather = () => {
   return (
     <>
       <div className="inputData">
-        <input type="text" onChange={(event) => setInput(event.target.value)} />
+        <input
+          placeholder="Enter city"
+          type="text"
+          onChange={(event) => setInput(event.target.value)}
+        />
       </div>
       {!city ? (
         <p>Not found result</p>
